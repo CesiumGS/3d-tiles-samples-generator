@@ -1,0 +1,7 @@
+/output
+/.idea
+.eslintrc.json
+.npmignore
+gulpfile.js
+*.tgz
+*.zip
