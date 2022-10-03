@@ -1,5 +1,14 @@
 # 3D Tiles Samples Generator
 
+> **A note about the repository structure**
+> 
+> This repository was originally part of the `3d-tiles-validator` repository, which contained multiple projects. Now, these project are maintained in separate repositories:
+> 
+> - The `3d-tiles-validator` can be found in [the `3d-tiles-validator` repository](https://github.com/CesiumGS/3d-tiles-validator)
+> - The `3d-tiles-tools` can be found in [the `3d-tiles-tools` repository](https://github.com/CesiumGS/3d-tiles-tools)
+> 
+
+
 The tilesets generated here are included in [3d-tiles-samples](https://github.com/CesiumGS/3d-tiles-samples) and [Cesium](https://github.com/CesiumGS/cesium).
 
 ## Instructions
