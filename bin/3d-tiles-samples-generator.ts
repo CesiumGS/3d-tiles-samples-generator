@@ -1268,7 +1268,7 @@ function saveBatchedTileset(tilesetName, tileOptions, tilesetOptions?) {
         // old .b3dm
         var b3dm = result.b3dm;
         if (tilesetOptions.contentDataUri) {
-            var dataUri = dataUriParser.format('.b3dm', b3dm);
+            var dataUri = dataUriParser.format('.b3dm', b3dm).content;
             tilesetOptions.contentUri = dataUri;
             return saveJson(
                 tilesetPath,
