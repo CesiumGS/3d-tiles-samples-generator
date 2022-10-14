@@ -5,18 +5,18 @@
   "description": "Tools for generating sample 3D Tiles tilesets.",
   "author": {
     "name": "Cesium GS, Inc. and Contributors",
-    "url": "https://github.com/CesiumGS/3d-tiles-validator/graphs/contributors"
+    "url": "https://github.com/CesiumGS/3d-tiles-samples-generator/graphs/contributors"
   },
   "keywords": [
     "3D Tiles"
   ],
-  "homepage": "https://github.com/CesiumGS/3d-tiles-validator",
+  "homepage": "https://github.com/CesiumGS/3d-tiles-samples-generator",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CesiumGS/3d-tiles-validator.git"
+    "url": "https://github.com/CesiumGS/3d-tiles-samples-generator.git"
   },
   "bugs": {
-    "url": "https://github.com/CesiumGS/3d-tiles-validator/issues"
+    "url": "https://github.com/CesiumGS/3d-tiles-samples-generator/issues"
   },
   "main": "index.js",
   "engines": {
