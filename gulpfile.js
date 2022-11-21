@@ -90,7 +90,7 @@ gulp.task('cloc', function() {
     return source.then(function() {
         return new Promise(function(resolve, reject) {
             cmdLine = `perl ${  clocPath  } --quiet --progress-rate=0` +
-                ` specs/lib/ specs/bin/`;
+                ` test/lib/ test/bin/`;
             child_process.exec(cmdLine, function(error, stdout, stderr) {
                 if (error) {
                     console.log(stderr);
