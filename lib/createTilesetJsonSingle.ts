@@ -15,7 +15,7 @@ const defaultTilesetVersion = '1.0';
  * @param {Object} [options.sphere] Bounding sphere of the tile.
  * @param {Matrix4} [options.transform=Matrix4.IDENTITY] The tile transform.
  * @param {Object} [options.properties] An object containing the min and max values for each property in the batch table.
- * @param {Object} [options.extensions] An object containing extensionsUsed, extensionsRequired, and extensions properties.
+ * @param {Object} [options.extensions] An object containing extensionsUsed and extensionsRequired properties.
  * @param {Object} [options.expire] Tile expiration options.
  */
 
@@ -36,6 +36,7 @@ export type TilesetOption = {
         [propertyName: string]: { minimum: number; maximum: number };
     };
     extensions?: {
+        extensionsUsed?: string[];
         extensionsRequired?: string[];
     };
     expire?: any;
@@ -52,7 +53,7 @@ export function createTilesetJsonSingle(options: TilesetOption): TilesetJson {
         options.box,
         options.sphere
     );
-    const extensions = options.extensions != null ? options.extensions : null;
+    const extensionsUsed = options?.extensions?.extensionsUsed;
     const extensionsRequired = options?.extensions?.extensionsRequired;
     const version =
         options.versionNumber != null
@@ -64,7 +65,9 @@ export function createTilesetJsonSingle(options: TilesetOption): TilesetJson {
             version: version
         },
         properties: options.properties,
-        ...(extensions != null ? { extensions: extensions } : {}),
+        ...(extensionsUsed != null
+            ? { extensionsUsed: extensionsUsed }
+            : {}),
         ...(extensionsRequired != null
             ? { extensionsRequired: extensionsRequired }
             : {}),
